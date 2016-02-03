@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="dialog_anim_bottom2top" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/subzero_dialog_anim_bottom2top_in</item>
-        <item name="@android:windowExitAnimation">@anim/subzero_dialog_anim_bottom2top_out</item>
-    </style>
-
-</resources>
