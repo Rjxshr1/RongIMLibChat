@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="title_height">48dip</dimen>
+    <dimen name="action_width">40dip</dimen>
+    <dimen name="corners_radius">5dip</dimen>
+    <!-- 底部导航 -->
+    <dimen name="footNavi_item_text_size">14sp</dimen>
+    <dimen name="footNavi_item_paddingTop">5dp</dimen>
+    <dimen name="footNavi_item_paddingLeft">5dp</dimen>
+    <dimen name="footNavi_item_paddingRight">5dp</dimen>
+    <dimen name="footNavi_item_paddingBottom">2dp</dimen>
+    <!-- 顶部tabs导航的高度 -->
+    <dimen name="tabs_height">48dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

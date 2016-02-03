@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/com.alex.alexchat"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.alex.materialdesign.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_loading"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:gravity="center">
+
+        <github.pnikosis.ProgressWheel
+            android:id="@+id/pw"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:matProg_barColor="#FF5722"
+            app:matProg_barSpinCycleTime="500"
+            app:matProg_barWidth="5dip"
+            app:matProg_circleRadius="40dip"
+            app:matProg_fillRadius="true"
+            app:matProg_linearProgress="true"
+            app:matProg_progressIndeterminate="true"
+            app:matProg_rimColor="#CFD8DC"
+            app:matProg_rimWidth="3dip"
+            app:matProg_spinSpeed="1.0"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pw"
+            android:ellipsize="end"
+            android:paddingRight="36dp"
+            android:singleLine="true"
+            android:text="App 启动中  ..."
+            android:textSize="20sp"
+            android:textColor="#686868"
+            tools:ignore="HardcodedText"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
