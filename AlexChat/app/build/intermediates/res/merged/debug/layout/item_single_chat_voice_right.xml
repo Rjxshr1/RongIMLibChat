@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="ContentDescription,HardcodedText" >
+
+    <github.pnikosis.ProgressWheel
+        android:id="@+id/pw"
+        style="@style/pw_loading_list"
+        android:layout_alignBottom="@+id/layout_body"
+        android:layout_toLeftOf="@+id/layout_body" />
+
+    <ImageView
+        android:id="@+id/iv_user"
+        style="@style/chat_list_iv_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/logo_user"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/chat_list_tv_user_name"
+        android:layout_toLeftOf="@+id/iv_user"
+        android:text="昵称"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_toLeftOf="@+id/iv_user"
+        android:background="@drawable/selector_message_right"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        style="@style/chat_list_layout_body_right"
+        >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="语音消息"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_player"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_content"
+            android:src="@drawable/animation_play_voice_right" />
+
+        <ImageView
+            android:id="@+id/ic_dot_red"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_player"
+            android:src="@drawable/ic_dot_red" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_body"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F5F5F5"
+              android:orientation="vertical"
+              android:paddingBottom="16dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="32dp"
+              android:paddingTop="16dp"
+              tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="定位城市"
+        android:textColor="#ff5c5c5c"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_round_rect_white_gray"
+        android:clickable="true"
+        android:drawableLeft="@drawable/city_locating_frame2"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="北京市"
+        android:textColor="@color/gray_68"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="我的群组"
+        android:textColor="#ff5c5c5c"
+        android:textSize="14sp"/>
+
+    <github.common.view.HeadGridView
+        android:id="@+id/hgv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:gravity="center"
+        android:horizontalSpacing="16dp"
+        android:listSelector="@drawable/selector_listview_item_transparent"
+        android:numColumns="3"
+        android:verticalSpacing="16dp"/>
+
+</LinearLayout>

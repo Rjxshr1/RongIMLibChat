@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="HardcodedText">
+
+    <github.pnikosis.ProgressWheel
+        android:id="@+id/pw"
+        style="@style/pw_loading_list"
+        android:layout_alignBottom="@+id/layout_body"
+        android:layout_toLeftOf="@+id/layout_body"/>
+
+    <ImageView
+        android:id="@+id/iv_user"
+        style="@style/chat_list_iv_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/logo_user"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/chat_list_tv_user_name"
+        android:layout_toLeftOf="@+id/iv_user"
+        android:text="昵称"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        style="@style/chat_list_layout_body_right"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_toLeftOf="@+id/iv_user"
+        android:background="@drawable/selector_message_right"
+        >
+
+        <ImageView
+            android:id="@+id/iv_content"
+            style="@style/chat_list_iv_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_empty"
+            tools:ignore="HardcodedText,ContentDescription"/>
+    </RelativeLayout>
+
+</RelativeLayout>
